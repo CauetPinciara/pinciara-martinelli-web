@@ -1,11 +1,11 @@
 "use client";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Switch } from "@/components/ui/switch"; // Import the Switch component from shadcn/ui
+import { Switch } from "@/components/ui/switch";
 import Image from "next/image";
 
 export default function HeroSection() {
-  const [isDesignSwitched, setIsDesignSwitched] = useState(false);
+  const [isDesignSwitched, setIsDesignSwitched] = useState(true);
 
   const toggleDesign = () => {
     setIsDesignSwitched(!isDesignSwitched);
@@ -45,12 +45,14 @@ export default function HeroSection() {
         >
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Simplificamos Suas Finanças, Potencializamos Seu Futuro
+              Seja bem-vindo à Pinciara Martinelli
             </h1>
             <p className="text-lg text-slate-300">
-              Consultoria financeira personalizada para transformar desafios em
-              oportunidades. Planeje, organize e cresça com segurança.
+              A consultoria financeira especializada em atender empresas de
+              pequeno e médio porte. Nossa equipe experiente está aqui para
+              oferecer os melhores serviços financeiros para o seu negócio.
             </p>
+
             <div
               className={`flex gap-4 ${
                 isDesignSwitched ? "justify-center" : ""
