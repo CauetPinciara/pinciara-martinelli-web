@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { SiteHeader } from "@/components/layout/site-header";
+import HeroSection from "./sections/hero";
 
 export default function HomePage() {
   return (
@@ -20,36 +21,7 @@ export default function HomePage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-navy-blue-800 text-white">
-          <div className="container mx-auto px-4 py-20 md:py-32 grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl md:w-[110%] font-bold leading-tight">
-                Simplificamos Suas Finanças, Potencializamos Seu Futuro
-              </h1>
-              <p className="text-lg text-slate-300">
-                Consultoria financeira personalizada para transformar desafios
-                em oportunidades. Planeje, organize e cresça com segurança.
-              </p>
-              <div className="flex gap-4">
-                <Button size="lg" className="bg-salmon-500 font-bold">
-                  Fale com um Especialista
-                </Button>
-                <Button size="lg" variant="secondary">
-                  Saiba Mais
-                </Button>
-              </div>
-            </div>
-            <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Consultoria Financeira"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
-          </div>
-        </section>
+        <HeroSection />
 
         {/* Services Section */}
         <section id="services" className="py-20 bg-slate-50">
