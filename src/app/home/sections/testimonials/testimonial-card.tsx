@@ -17,7 +17,7 @@ export default function TestimonialCard({ testimonial }: IProps) {
   return (
     <Card className="w-full max-w-lg relative">
       {/* Purple Wave Decoration */}
-      <div className="absolute -left-4 top-0 bottom-0 w-8 bg-primary rounded-l-full" />
+      <div className="absolute -left-4 top-0 bottom-0 w-8 bg-salmon-500 rounded-l-full" />
 
       <CardHeader className="pl-6 flex items-center gap-4">
         {/* Profile Image */}
