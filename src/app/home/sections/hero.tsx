@@ -1,5 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import { ROUTES } from "@/lib/routes";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -23,9 +25,11 @@ export default function HeroSection() {
               <Button size="lg" className="bg-salmon-500 font-bold mr-4">
                 Fale com um Especialista
               </Button>
-              <Button size="lg" variant="secondary">
-                Saiba Mais
-              </Button>
+              <Link href={ROUTES.SERVICES}>
+                <Button size="lg" variant="secondary">
+                  Saiba Mais
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

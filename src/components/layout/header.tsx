@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { ROUTES } from "@/lib/routes";
 
 export function SiteHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,7 +64,7 @@ export function SiteHeader() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
           <Link
-            href="#services"
+            href={ROUTES.SERVICES}
             className={cn(
               "text-sm hover:text-primary transition-all duration-300",
               isScrolled ? "text-primary" : "text-white"
@@ -72,7 +73,7 @@ export function SiteHeader() {
             Serviços
           </Link>
           <Link
-            href="#about"
+            href={ROUTES.ABOUT}
             className={cn(
               "text-sm hover:text-primary transition-all duration-300",
               isScrolled ? "text-primary" : "text-white"
@@ -99,13 +100,13 @@ export function SiteHeader() {
             <SheetTitle className="text-primary text-xl">Páginas:</SheetTitle>
             <nav className="flex flex-col gap-4 mt-2 flex-grow">
               <Link
-                href="#services"
+                href={ROUTES.SERVICES}
                 className="text-lg hover:text-primary text-primary"
               >
                 Serviços
               </Link>
               <Link
-                href="#about"
+                href={ROUTES.ABOUT}
                 className="text-lg hover:text-primary text-primary"
               >
                 Sobre Nós

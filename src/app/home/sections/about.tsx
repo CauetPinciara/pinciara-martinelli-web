@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ROUTES } from "@/lib/routes";
 import { Briefcase, ShieldCheck, Target, Users } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutSection() {
   return (
@@ -35,9 +37,13 @@ export default function AboutSection() {
               estratégias para maximizar resultados e conquistar metas de longo
               prazo.
             </p>
-            <Button className="bg-salmon-500 font-bold w-full md:w-fit">
-              Conheça Nossa Trajetória
-            </Button>
+            <div className="mt-10">
+              <Link href={ROUTES.ABOUT}>
+                <Button className="bg-salmon-500 font-bold w-full md:w-fit">
+                  Conheça Nossa Trajetória
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
 
