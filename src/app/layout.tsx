@@ -34,7 +34,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Analytics />
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${forum.variable} antialiased`}
       >
@@ -44,6 +43,7 @@ export default function RootLayout({
           {children}
 
           <Footer />
+          <Analytics />
         </div>
       </body>
     </html>
