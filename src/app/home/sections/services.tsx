@@ -12,7 +12,8 @@ export default function ServicesSection() {
         "O coaching empresarial é um processo focado em ajudar líderes, equipes e empresas a atingirem seu pleno potencial.",
       icon: Trophy,
       id: "coach-empresarial",
-      image: "/placeholder.svg?height=200&width=300",
+      image:
+        "https://images.pexels.com/photos/6930542/pexels-photo-6930542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
       title: "Coach Pessoal",
@@ -20,7 +21,8 @@ export default function ServicesSection() {
         "O coaching pessoal é um processo de desenvolvimento focado em ajudar você a atingir suas metas e potencializar seu desempenho.",
       icon: User,
       id: "coach-pessoal",
-      image: "/placeholder.svg?height=200&width=300",
+      image:
+        "https://images.pexels.com/photos/8439694/pexels-photo-8439694.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
       title: "Treinamentos de Equipes",
@@ -28,7 +30,8 @@ export default function ServicesSection() {
         "O treinamento financeiro de equipe visa melhorar o conhecimento e a prática de gestão financeira entre seus colaboradores.",
       icon: Users,
       id: "treinamento-de-equipes",
-      image: "/placeholder.svg?height=200&width=300",
+      image:
+        "https://images.pexels.com/photos/8761330/pexels-photo-8761330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
   ];
 
@@ -59,6 +62,8 @@ export default function ServicesSection() {
                   alt={service.title}
                   fill
                   className="object-cover"
+                  placeholder="blur"
+                  blurDataURL="/placeholder.svg?height=500&width=400"
                 />
               </div>
               <CardContent className="flex-grow p-6">
