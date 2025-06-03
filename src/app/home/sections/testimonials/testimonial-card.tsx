@@ -6,7 +6,7 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import { Quote } from "lucide-react";
-import Image from "next/image";
+// import Image from "next/image";
 import { Testimonial as ITestimonial } from "./types";
 
 type IProps = {
@@ -15,20 +15,20 @@ type IProps = {
 
 export default function TestimonialCard({ testimonial }: IProps) {
   return (
-    <Card className="w-full max-w-lg relative">
+    <Card className="w-full relative">
       {/* Purple Wave Decoration */}
       <div className="absolute -left-4 top-0 bottom-0 w-8 bg-primary rounded-l-full" />
 
       <CardHeader className="pl-6 flex items-center gap-4">
         {/* Profile Image */}
-        <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-primary">
+        {/* <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-primary">
           <Image
             src={testimonial.image || "/placeholder.svg"}
             alt={testimonial.name}
             fill
             className="object-cover"
           />
-        </div>
+        </div> */}
         <div className="flex flex-col items-center">
           <CardTitle className="text-xl font-semibold">
             {testimonial.name}

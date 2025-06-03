@@ -3,17 +3,12 @@
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetFooter,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetFooter, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { ROUTES } from "@/lib/routes";
+import ContactButton from "../common/contact-button";
 
 export function SiteHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -88,10 +83,7 @@ export function SiteHeader() {
           <SheetTrigger asChild className="md:hidden">
             <Button variant="ghost" size="icon">
               <Menu
-                className={cn(
-                  "h-6 w-6 transition-colors duration-300",
-                  isScrolled ? "text-black" : "text-white"
-                )}
+                className={cn("h-6 w-6 transition-colors duration-300", isScrolled ? "text-black" : "text-white")}
               />
               <span className="sr-only">Toggle menu</span>
             </Button>
@@ -99,23 +91,15 @@ export function SiteHeader() {
           <SheetContent side="right" className="h-full flex flex-col">
             <SheetTitle className="text-primary text-xl">Páginas:</SheetTitle>
             <nav className="flex flex-col gap-4 mt-2 flex-grow">
-              <Link
-                href={ROUTES.SERVICES}
-                className="text-lg hover:text-primary text-primary"
-              >
+              <Link href={ROUTES.SERVICES} className="text-lg hover:text-primary text-primary">
                 Serviços
               </Link>
-              <Link
-                href={ROUTES.ABOUT}
-                className="text-lg hover:text-primary text-primary"
-              >
+              <Link href={ROUTES.ABOUT} className="text-lg hover:text-primary text-primary">
                 Sobre Nós
               </Link>
             </nav>
             <SheetFooter className="mt-auto">
-              <Button size="lg" className="bg-salmon-500 font-bold">
-                Fale com um Especialista
-              </Button>
+              <ContactButton />
             </SheetFooter>
           </SheetContent>
         </Sheet>

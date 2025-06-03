@@ -7,6 +7,7 @@ import { UserCheck, Briefcase, GraduationCap, CheckCircle } from "lucide-react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect } from "react";
 import { cn } from "@/lib/utils";
+import ContactButton from "@/components/common/contact-button";
 
 export default function ServicesPageContent() {
   const services = [
@@ -276,9 +277,7 @@ export default function ServicesPageContent() {
                 </Card>
 
                 <div className="mt-8 text-center">
-                  <Button className="bg-salmon-500" size="lg">
-                    Agende uma Consulta
-                  </Button>
+                  <ContactButton text="Agende uma Consulta"/>
                 </div>
               </div>
             </div>

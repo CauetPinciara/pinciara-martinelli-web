@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@/components/ui/button";
+import ContactButton from "@/components/common/contact-button";
 
 export default function HeroSection() {
   return (
@@ -17,9 +17,7 @@ export default function HeroSection() {
             </p>
 
             <div>
-              <Button size="lg" className="bg-salmon-500 font-bold mr-4">
-                Fale com um Especialista
-              </Button>
+              <ContactButton />
             </div>
           </div>
         </div>
