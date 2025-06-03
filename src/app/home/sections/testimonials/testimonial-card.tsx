@@ -29,7 +29,7 @@ export default function TestimonialCard({ testimonial }: IProps) {
             className="object-cover"
           />
         </div>
-        <div>
+        <div className="flex flex-col items-center">
           <CardTitle className="text-xl font-semibold">
             {testimonial.name}
           </CardTitle>

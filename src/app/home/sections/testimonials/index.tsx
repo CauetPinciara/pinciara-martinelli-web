@@ -15,7 +15,7 @@ import TestimonialCard from "./testimonial-card";
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Maria Santos",
+    name: "Elaine",
     company: "Tech Solutions Brasil",
     image: "/placeholder.svg?height=100&width=100",
 
@@ -24,19 +24,11 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 2,
-    name: "Carlos Oliveira",
+    name: "Soli",
     company: "Grupo Inovação",
     image: "/placeholder.svg?height=100&width=100",
     quote:
       "Profissionalismo e dedicação excepcionais. A equipe nos ajudou a reestruturar nossas finanças e alcançar nossas metas de crescimento.",
-  },
-  {
-    id: 3,
-    name: "Ana Beatriz",
-    company: "Startup Express",
-    image: "/placeholder.svg?height=100&width=100",
-    quote:
-      "O conhecimento e a experiência da equipe foram fundamentais para otimizar nosso fluxo de caixa e melhorar nossa tomada de decisão.",
   },
 ];
 
